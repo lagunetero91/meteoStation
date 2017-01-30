@@ -11,4 +11,4 @@ uint8_t dht11Err;
 // BMP180 sensor
 SFE_BMP180 bmp;
 uint8_t bmpErr;
-
+double temperature = 0;

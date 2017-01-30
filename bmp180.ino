@@ -14,3 +14,14 @@ uint8_t initPresionSensor(){
   } 
 }
 
+uint8_t readBmp(){
+  bmpErr = bmp.startTemperature();  // Iniciamos la lectura de la temperatura
+  if(bmpErr !=0){
+    delay(bmpErr);
+    bmpErr = bmp.getTemperature(temperature);
+    if(bmpErr != 0){
+      bmpErr = bmp.startPressure(3);
+    }
+  }
+}
+
