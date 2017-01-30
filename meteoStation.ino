@@ -1,3 +1,5 @@
+#include <SFE_BMP180.h>
+#include <Wire.h>
 #include <DHT11.h>
 #include "meteoStation.h"
 #include <avr/sleep.h>
